@@ -12,9 +12,6 @@ Fill in sections marked with `TODO`. In particular, edit
  - [infrastructure/utils.py](cs285/infrastructure/utils.py)
  - [scripts/run_hw1.py](cs285/scripts/run_hw1.py)
 
-You have the option of running locally or on Colab using
- - [scripts/run_hw1.py](cs285/scripts/run_hw1.py) (if running locally) or [scripts/run_hw1.ipynb](cs285/scripts/run_hw1.ipynb) (if running on Colab)
-
 See the homework pdf for more details.
 
 ## Run the code
