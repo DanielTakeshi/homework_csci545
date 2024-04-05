@@ -1,6 +1,6 @@
 import numpy as np
 
-from cs285.infrastructure import pytorch_util as ptu
+from cs545.infrastructure import pytorch_util as ptu
 from .base_policy import BasePolicy
 from torch import nn
 import torch

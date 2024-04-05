@@ -2,7 +2,7 @@
 from setuptools import setup
 
 setup(
-    name='cs285',
+    name='cs545',
     version='0.1.0',
-    packages=['cs285'],
+    packages=['cs545'],
 )

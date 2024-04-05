@@ -8,9 +8,9 @@ You can run this code on your own machine or on Google Colab.
 ## Complete the code
 
 Fill in sections marked with `TODO`. In particular, edit
- - [policies/MLP_policy.py](cs285/policies/MLP_policy.py)
- - [infrastructure/utils.py](cs285/infrastructure/utils.py)
- - [scripts/run_hw1.py](cs285/scripts/run_hw1.py)
+ - [policies/MLP_policy.py](cs545/policies/MLP_policy.py)
+ - [infrastructure/utils.py](cs545/infrastructure/utils.py)
+ - [scripts/run_hw1.py](cs545/scripts/run_hw1.py)
 
 See the homework pdf for more details.
 
@@ -24,10 +24,10 @@ If running on Colab, adjust the `#@params` in the `Args` class according to the 
 Command for problem 1:
 
 ```
-python cs285/scripts/run_hw1.py \
-	--expert_policy_file cs285/policies/experts/Ant.pkl \
+python cs545/scripts/run_hw1.py \
+	--expert_policy_file cs545/policies/experts/Ant.pkl \
 	--env_name Ant-v4 --exp_name bc_ant --n_iter 1 \
-	--expert_data cs285/expert_data/expert_data_Ant-v4.pkl \
+	--expert_data cs545/expert_data/expert_data_Ant-v4.pkl \
 	--video_log_freq -1
 ```
 
@@ -40,10 +40,10 @@ Command for section 1:
 (Note the `--do_dagger` flag, and the higher value for `n_iter`)
 
 ```
-python cs285/scripts/run_hw1.py \
-    --expert_policy_file cs285/policies/experts/Ant.pkl \
+python cs545/scripts/run_hw1.py \
+    --expert_policy_file cs545/policies/experts/Ant.pkl \
     --env_name Ant-v4 --exp_name dagger_ant --n_iter 10 \
-    --do_dagger --expert_data cs285/expert_data/expert_data_Ant-v4.pkl \
+    --do_dagger --expert_data cs545/expert_data/expert_data_Ant-v4.pkl \
 	--video_log_freq -1
 ```
 
@@ -64,5 +64,5 @@ You can choose to visualize specific runs with a comma-separated list:
 tensorboard --logdir data/run1,data/run2,data/run3...
 ```
 
-If running on Colab, you will be using the `%tensorboard` [line magic](https://ipython.readthedocs.io/en/stable/interactive/magics.html) to do the same thing; see the [notebook](cs285/scripts/run_hw1.ipynb) for more details.
+If running on Colab, you will be using the `%tensorboard` [line magic](https://ipython.readthedocs.io/en/stable/interactive/magics.html) to do the same thing; see the [notebook](cs545/scripts/run_hw1.ipynb) for more details.
 

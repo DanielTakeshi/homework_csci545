@@ -17,8 +17,8 @@ import numpy as np
 import torch
 from torch import distributions
 
-from cs285.infrastructure import pytorch_util as ptu
-from cs285.policies.base_policy import BasePolicy
+from cs545.infrastructure import pytorch_util as ptu
+from cs545.policies.base_policy import BasePolicy
 
 
 def build_mlp(

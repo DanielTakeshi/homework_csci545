@@ -10,7 +10,7 @@ import cv2
 import numpy as np
 import time
 
-from cs285.infrastructure import pytorch_util as ptu
+from cs545.infrastructure import pytorch_util as ptu
 
 
 def sample_trajectory(env, policy, max_path_length, render=False):
