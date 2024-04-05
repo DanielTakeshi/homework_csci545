@@ -32,16 +32,18 @@ def sample_trajectory(env, policy, max_path_length, render=False):
                 img = env.render(mode='single_rgb_array')
             image_obs.append(cv2.resize(img, dsize=(250, 250), interpolation=cv2.INTER_CUBIC))
     
+        # =================== YOUR CODE HERE (CSCI 545) ======================== #
         # TODO use the most recent ob to decide what to do
-        ac = TODO # HINT: this is a numpy array
-        ac = ac[0]
+        # HINT: be careful about dimensions and if something should have a leading
+        # batch dimension
+        ac = TODO  # HINT: this is a numpy array
 
-        # TODO: take that action and get reward and next ob
+        # TODO: take that action and get reward and next ob by stepping in the env
         next_ob, rew, done, _ = TODO
-        
-        # TODO rollout can end due to done, or due to max_path_length
+        # =================== END YOUR CODE HERE (CSCI 545) ==================== #
+
         steps += 1
-        rollout_done = TODO # HINT: this is either 0 or 1
+        rollout_done = done or (steps == max_path_length) # this is either 0 or 1
         
         # record result of taking that action
         obs.append(ob)
